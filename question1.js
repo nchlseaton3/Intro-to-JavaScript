@@ -16,3 +16,22 @@
 
 
 
+function positiveSum(arr) {
+  let total = 0;
+
+  for (let num of arr) {
+    if (num > 0) {
+      total += num;
+    }
+  }
+
+  return total;
+}
+
+
+// Test 
+
+console.log(positiveSum([1, -4, 7, 12])); // 20
+console.log(positiveSum([-1, -2, -3]));  // 0
+console.log(positiveSum([]));             // 0
+console.log(positiveSum([5, 5, 5]));      // 15
